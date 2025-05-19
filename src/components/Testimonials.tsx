@@ -99,18 +99,18 @@ const Testimonials: React.FC = () => {
       <div className="w-[90%] max-w-[1900px] mx-auto py-8">
         <div className="sm:flex justify-between items-center mb-4">
           <h2 className="text-2xl font-semibold text-[#0F172A]">
-            What Our Customers Say About Us
+            What Our Customers Say <br /> About Us
           </h2>
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-1 sm:space-x-2">
             <button
               onClick={prevSlide}
-              className="bg-[#94A3B8] p-1.5 rounded hover:bg-[#CBD5E1]"
+              className="bg-[#94A3B8] sm:p-1.5 rounded hover:bg-[#CBD5E1]"
             >
               <img src="/assets/icons/leftarrow.svg" alt="Left" />
             </button>
             <button
               onClick={nextSlide}
-              className="bg-[#94A3B8] p-1.5 rounded hover:bg-[#CBD5E1]"
+              className="bg-[#94A3B8] sm:p-1.5 rounded hover:bg-[#CBD5E1]"
             >
               <img src="/assets/icons/rightarrow.svg" alt="Right" />
             </button>
@@ -128,10 +128,10 @@ const Testimonials: React.FC = () => {
             {testimonials.map((t) => (
               <div
                 key={t.id}
-                className="px-2 shrink-0"
+                className="px-2 my-4 shrink-0"
                 style={{ width: `${itemWidth}%` }}
               >
-                <div className="bg-white border shadow rounded-lg p-4 h-full flex flex-col justify-between">
+                <div className="bg-white shadow-[0_0_3px_0.5px_#3B82F61F] rounded-xl p-4 h-full flex flex-col justify-between">
                   <div className="text-blue-500 text-2xl mb-2 py-4">
                     <img src="/assets/icons/quotes.svg" alt="Quote" className="w-10 h-10" />
                   </div>

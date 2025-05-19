@@ -4,7 +4,7 @@ const InstructorSection: React.FC = () => {
   return (
     <div className="w-[90%] max-w-[1900px]  mx-auto px-4 py-16 gap-16 items-center ">
       {/* Become an Instructor */}
-      <div className="flex flex-col sm:flex-row items-center gap-6 ">
+      <div className="flex flex-col sm:flex-row items-around">
         <div className="">
           <img
             src="/assets/model-1.jpg"
@@ -12,7 +12,7 @@ const InstructorSection: React.FC = () => {
             className="w-full h-full object-cover "
           />
         </div>
-        <div className=" sm:text-left">
+        <div className=" sm:text-left m-auto">
           <h3 className="text-2xl text-black font-semibold mb-2">Become an Instructor</h3>
           <p className="text-[#1D2939] mb-4 max-w-md text-base font-normal">
             Instructors from around the world teach millions of students on
@@ -26,7 +26,7 @@ const InstructorSection: React.FC = () => {
       </div>
 
       {/* Transform Your Life */}
-      <div className="flex flex-col sm:flex-row-reverse items-center ">
+      <div className="flex flex-col sm:flex-row-reverse items-around ">
         <div className=" p-2 ">
           <img
             src="/assets/model-2.jpg"
@@ -34,11 +34,11 @@ const InstructorSection: React.FC = () => {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className=" sm:text-left">
+        <div className=" sm:text-left m-auto">
           <h3 className="text-2xl text-black font-semibold mb-2">
             Transform your life through education
           </h3>
-          <p className="text-[#1D2939] mb-4 max-w-md text-base font-normal">
+          <p className="text-[#1D2939] mb-4 max-w-lg text-base font-normal">
             Learners around the world are launching new careers, advancing in
             their fields, and enriching their lives.
           </p>

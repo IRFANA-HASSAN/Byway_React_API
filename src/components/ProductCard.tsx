@@ -40,22 +40,16 @@ const ProductCard: React.FC<ProductCardProps> = ({ image, title, price, classNam
         <div className="p-4">
           <h4 className="text-xl font-medium text-[#0F172A] mb-2">Share</h4>
           <div className="flex justify-around mb-4">
-            {[
-              { icon: 'Facebook', alt: 'Facebook' },
-              { icon: 'GitHub', alt: 'GitHub' },
-              { icon: 'Google', alt: 'Google' },
-              { icon: 'Twitter', alt: 'Twitter' },
-              { icon: 'Microsoft', alt: 'Microsoft' },
-            ].map(({ icon, alt }) => (
+            {['Facebook', 'GitHub', 'Google', 'Twitter', 'Microsoft'].map((name) => (
               <a
-                key={alt}
+                key={name}
                 href="#"
                 className="bg-[#EFF1F4] rounded-full p-1 hover:scale-105 transition"
-                aria-label={`Share on ${alt}`}
+                aria-label={`Share on ${name}`}
               >
                 <img
-                  src={`/assets/icons/${icon}.svg`}
-                  alt={alt}
+                  src={`/assets/icons/${name}.svg`}
+                  alt={name}
                   className="h-12 w-12 bg-white rounded-full p-2"
                 />
               </a>

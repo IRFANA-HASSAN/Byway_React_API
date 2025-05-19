@@ -46,7 +46,7 @@ const TopCourses: React.FC<TopCoursesProps> = ({ title, className = '' }) => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
         {visibleProducts.map((product) => (
           <Link to={`/product/${product.id}`} key={product.id}>
-            <div className="bg-white border border-gray-300 shadow-[0_0_8px_0_#3B82F61F] rounded-lg overflow-hidden hover:shadow-md transition">
+            <div className="bg-white border border-gray-300 shadow-[0_0_8px_0_#3B82F61F] rounded-xl overflow-hidden hover:shadow-md transition">
               <img
                 src={product.image}
                 alt={product.title}
@@ -69,7 +69,7 @@ const TopCourses: React.FC<TopCoursesProps> = ({ title, className = '' }) => {
                   22 Total Hours. 155 Lectures. Beginner
                 </p>
 
-                <p className="text-xl font-semibold text-[#0F172A] mt-2">${product.price}</p>
+                <p className="text-xl font-bold text-[#0F172A] mt-2">${product.price}</p>
               </div>
             </div>
           </Link>
